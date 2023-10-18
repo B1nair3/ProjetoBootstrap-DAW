@@ -11,29 +11,40 @@
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
 <body>
-    <!--Inicio do container da navbar-->
-    <nav class="navbar bg-dark border-bottom border-body" id="navbar" data-bs-theme="dark">
-        <div class="container" id="navbar">
-          <a class="navbar-brand" href="#">
-            <img src="../images/loiIcon.png" alt="loiIcon" width="40%" height="">
+    <!--Começo da NavBar-->
+    <nav class="navbar bg-dark border-body">
+        <div class="container">
+          <a class="navbar-brand" href="#" id="navbar">
+            <img src="../images/loiIcon.png" alt="Icone" width="300" height="90">
           </a>
-          <a href="cadastro.html" style="text-decoration: none; color:white;">Cadastro</a>
         </div>
-    </nav>
-    <!--Fim do container da navbar-->
+      </nav>
+    <!--Fim da NavBar-->
 
-    <!--Inicio do container do meio onde fica uma imagem de campeão-->
-    <div class="container" id="mid">
-        <img src="../images/index/aurelion.png" alt="Aurelion Sol">
+    <!--Inicio do carrossel-->
+    <div class="container">
+        <div id="carousel" class="carousel slide">
+            <div class="carousel-inner" id="carouselItem">
+            <div class="carousel-item active">
+                <img src="../images/index/loudEliminada.png" class="d-block" alt="Loud" height="300px" width="100%">
+            </div>
+            <div class="carousel-item">
+                <img src="..." class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="..." class="d-block w-100" alt="...">
+            </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+            </button>
+        </div>
     </div>
-    <!--Fim do container do meio onde fica uma imagem de campeão-->
-
-    <!--Inicio do container principal-->
-    <div class="container" id="main">
-        <br>
-        <br>
-        <br>
-    </div>
-    <!--Fim do container principal-->
+    <!--Fim do carrossel-->
 </body>
 </html>
