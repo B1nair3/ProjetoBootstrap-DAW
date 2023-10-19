@@ -1,8 +1,10 @@
+@font-face {
+    font-family: vampire;
+    src: url(../fonts/vampire_wars/VampireWars.otf);
+}
+
 #navbar {
     color:black;
-    font-size: 33px;
-    text-align: center;
-    align-items: left;
 }
 
 body {
@@ -20,11 +22,111 @@ body {
     align-items: center;
 }
 
-#carousel {
-    margin-top: 2%;
+.container > #carouselExampleSlidesOnly {
+    margin-top: 1%;
+    width: 102%;
 }
 
-#carousel > #carouselItem {
-    height: 300px;
-    width: 1000px;
+#porcentagens {
+    width: 100%;
+    flex-direction: row;
+    display: flex;
+    padding: 2%;
+}
+
+#principal.container {
+    height: max-content;
+    background-color: #212529;
+    color: white;
+    margin-top: 1%;
+    width: fit-content;
+}
+
+li {
+   list-style-type: none !important;
+   padding: 2%;
+}
+li > p {
+    text-align: center;
+    font-family: vampire, sans-serif;
+}
+
+.container > #campeoes {
+    width: 100%;
+    flex-direction: row;
+    display: flex;
+    margin-bottom: 4%;
+}
+.container > p {
+    text-align: center;
+    font-family: vampire, sans-serif;
+    font-size: 40px;
+}
+
+.card {
+    margin-right: 0%;
+}
+
+.container > #ultilizados > p {
+    font-family: vampire;
+    font-size: 30px;
+    padding: 1%;
+    text-align: center;
+}
+.container > #ultilizados {
+    margin-bottom: 5%;
+}
+
+.accordion {
+    font-family: vampire;
+}
+.accordion-item {
+    background-color: #212529!important;
+    color: white !important ;
+}
+.accordion-button {
+    background-color: #212529 !important;
+    color: white !important;
+}
+.accordion-body > ul > li > img {
+    height: 80px;
+    align-items: center;
+    text-align: center;
+}
+.accordion-body > ul > li > a > img {
+    height: 80px;
+    align-items: center;
+    text-align: center;
+}
+
+.card {
+    font-family: vampire !important;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    font-family: vampire;
+    font-size: 17px;
+    text-align: center;
+}
+footer > .container > p{
+    font-size: 10px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+footer > .container > #logo {
+    padding: 5%;
+    margin-left: 10px;
+}
+footer > .container > #contato > ul {
+    margin-left: -40px;
+}
+@media (max-width: 575px) {
+    footer > .container > #logo > img {
+        height: 75px;
+    }
+    footer > .container > .row > #contato {
+        font-size: 15px;
+    }
 }
