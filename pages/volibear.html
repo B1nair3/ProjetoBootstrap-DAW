@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>League of Info</title>
+    <link rel="shortcut icon" type="imagex/png" href="../images/icon.png">
+    <link rel="stylesheet" href="../styles/styleVolibear.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+</head>
+
+<body>
+    <!--Começo da NavBar-->
+    <nav class="navbar bg-black border-body">
+        <div class="container">
+          <a class="navbar-brand" href="index.html" id="navbar">
+            <img src="../images/loiIcon.png" alt="Icone" width="100%" height="60px">
+          </a>
+        </div>
+      </nav>
+    <!--Fim da NavBar-->
+    <!--Inicio da apresentação-->
+    <div class="container" id="apresentacao">
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="../images/campeoes/splash/volibearFlageloSplash.png" class="d-block w-100" alt="volibear">
+              </div>
+            </div>
+          </div>
+    </div>
+    <!--Fim da apresentação-->
+    <!--Inicio da Main-->
+    <div class="container" id="principal">
+        <!--Inicio da primeira linha com status spells e rota-->
+        <div class="row" id="statusRotaSpell">
+            <div class="col md-4 border" id="status">
+                <ul>
+                    <li>
+                        <p>Popularidade</p>
+                        <div class="progress" role="progressbar" aria-label="Info example" aria-valuenow="4" aria-valuemin="0" aria-valuemax="100">
+                          <div class="progress-bar text-white" style="width: 30%">4.3%</div>
+                        </div>
+                    </li>
+                    <li>
+                        <p>% de Vitoria</p>
+                        <div class="progress" role="progressbar" aria-label="Success example" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                          <div class="progress-bar bg-success text-white" style="width: 100%">49,9%</div>
+                        </div> 
+                    </li>
+                    <li>
+                        <p>Taxa de banimento</p>
+                        <div class="progress" role="progressbar" aria-label="Danger example" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+                          <div class="progress-bar bg-danger text-white" style="width: 15%">1,3%</div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col md-4 border" id="rota">
+                <img src="../images/lanes/topIcon.png" alt="topo" height="80%"><br>
+                Rota Topo
+            </div>
+
+            <div class="col md-4 border" id="spell">
+                <table>
+                    <tr>
+                        <td>
+                            <img src="../images/spells/teleportIcon.jpg" alt="teleporte">
+                        </td>
+                        <td>
+                            <img src="../images/spells/flashIcon.jpg" alt="flash">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Teleporte
+                        </td>
+                        <td>
+                            Flash
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <!--Fim da primeira linha com status spells e rota-->
+        <!--Inicio da linha das skills-->
+        <div class="container border" id="habilidades">
+            <div class="row">
+                <div class="col-md-6" id="slot">
+                    <img src="../images/campeoes/habilidades/volibearPassiva.png" alt="p"> <span>A tempestade implacável</span>
+                    <p>Os Ataques e habilidades de Volibear concedem Velocidade de Ataque e, às vezes, fazem com que seus
+                        Ataques causem Dano Mágico adicional a inimigos próximos.</p>
+                </div>
+                <div class="col-md-6" id="slot">
+                    <img src="../images/campeoes/habilidades/volibearQ.png" alt="q"> <span>Esmagamento trovejante</span>
+                    <p>Volibear ganha velocidade ao correr na direção dos inimigos, Atordoando e causando dano ao primeiro que Atacar.</p>
+                </div>
+                <div class="col-md-6" id="slot">
+                    <img src="../images/campeoes/habilidades/volibearW.png" alt="w"> <span>Fúria selvagem</span>
+                    <p>Volibear causa dano a um inimigo, marcando-o e aplicando efeitos ao contato. Conjurar a habilidade 
+                        novamente no mesmo alvo causa dano adicional e cura Volibear.</p>
+                </div>
+                <div class="col-md-6" id="slot">
+                    <img src="../images/campeoes/habilidades/volibearE.png" alt="e"> <span>Divisor de céus</span>
+                    <p>Volibear invoca um relâmpago em um local, causando dano e Lentidão aos inimigos. Ele também ganhará
+                        um Escudo se estiver no raio da explosão.</p>
+                </div>
+                <div class="col-md-6" id="slot">
+                    <img src="../images/campeoes/habilidades/volibearR.png" alt="r"> <span>Emissario da tempestade</span>
+                    <p>Volibear salta até um local-alvo, causando dano e Lentidão aos inimigos sob ele, além de receber Vida
+                        adicional. Torres inimigas próximas ao local de pouso são temporariamente Desabilitadas.</p>
+                </div>
+            </div>
+        </div>
+        <!--Fim da linha das skills-->
+    </div>
+    <!--Fim da Main-->
+</body>
+<footer>
+    <div class="container">
+        <div id="logo">
+            <img src="../images/loiIcon.png" alt="loi" height="100px">
+        </div>
+        <div class="row">
+            <div id="contato">
+                <ul>
+                    <li><a href="contato.html" style="color: white; font-size: 25px;">Contato</a></li>
+                    <li><i class="bi bi-envelope-fill"></i>enrique.msavedra@gmail.com</li>
+                    <li>jgamec2019@gmail.com</li>
+                    <li><i class="bi bi-instagram"></i><br><a href="https://www.instagram.com/rique._.21/" style="color: white;"> Enrique Machado</a></li>
+                    <li></i><a href="https://www.instagram.com/b1nair3/" style="color: white;"> João Vitor Carrilho</a></li>
+                </ul>
+            </div>
+        </div>
+        <p>© 2023-2024 João Vitor Carrilho, Enrique Machado Savedra</p>
+    </div>
+</footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" 
+        crossorigin="anonymous"></script>
+</html>

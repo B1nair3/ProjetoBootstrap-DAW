@@ -1,0 +1,154 @@
+@font-face {
+    font-family: vampire;
+    src: url(../fonts/vampire_wars/VampireWars.otf);
+}
+
+#navbar {
+    color:black;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-image: url(../images/summonersRift.jpg);
+    background-position: 60%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container > #carouselExampleSlidesOnly {
+    margin-top: 1%;
+    width: 102%;
+}
+
+#principal.container {
+    height: max-content;
+    background-color: #212529;
+    color: white;
+    margin-top: 1%;
+    width: 100%;
+}
+#principal > #statusRotaSpell {
+    width: 100%;
+    flex-direction: row;
+    display: flex;
+    padding: 2%;
+}
+#principal > #statusRotaSpell > #status {
+    width: fit-content;
+}
+#principal > #statusRotaSpell > #rota {
+    width: fit-content;
+    text-align: center;
+    padding: 1%;
+    font-family: vampire;
+}
+#principal > #statusRotaSpell > #spell {
+    width: fit-content;
+    text-align: center;
+    padding: 1%;
+    font-family: vampire;
+}
+#habilidades {
+    width: auto;
+    margin-bottom: 4%;
+}
+#slot {
+    padding: 2%;
+    font-family: vampire;
+}
+#slot > span {
+    font-size: 17px;
+}
+#slot > p{
+    font-size: 15px;
+    text-align: left;
+}
+
+.border {
+    margin: 1%;
+}
+
+ul {
+    margin-left: -10%;
+}
+li {
+    list-style-type: none !important;
+    padding: 2%;
+}
+p {
+    text-align: center;
+    font-family: vampire, sans-serif;
+    width: fit-content;
+    margin: 0px 0px 0px !important;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    font-family: vampire;
+    font-size: 17px;
+    text-align: center;
+}
+footer > .container > p {
+    font-size: 10px;
+    margin-top: 5%;
+    margin-bottom: 5% !important;
+}
+footer > .container > #logo {
+    padding: 5%;
+    margin-left: 10px;
+}
+footer > .container > #contato > ul {
+    margin-left: -40px;
+}
+
+@media (max-width: 575px) {
+    footer > .container > #logo > img {
+        height: 75px;
+    }
+    footer > .container > .row > #contato {
+        font-size: 15px;
+    }
+}
+@media (max-width: 768px) {
+    #principal > #statusRotaSpell > #rota > img {
+        height: 50%;
+        margin-top: 15%;
+    }
+    #principal > #statusRotaSpell > #spell > table > tr > td > img {
+        height: 10%;
+    }
+    #slot > span {
+        font-size: 16px;
+    }
+}
+@media ((min-width: 375px) and (max-width: 425px)) {
+    table {
+        margin-left: 22%;
+    }
+}
+@media (max-width: 320px) {
+    table {
+        margin-left: 12%;
+    }
+    #slot > span {
+        font-size: 13px;
+    }
+}
+@media (min-width: 1024px) {
+    table {
+        margin-left: 10%;
+    }
+}
+@media (min-width: 1440px) {
+    table {
+        margin-left: 20%;
+    }
+}

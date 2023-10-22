@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>League of Info</title>
+    <link rel="shortcut icon" type="imagex/png" href="../images/icon.png">
+
+    <link rel="stylesheet" href="../styles/styleContato.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" 
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+</head>
+
+<body>
+    <!--Começo da NavBar-->
+    <nav class="navbar bg-black border-body">
+        <div class="container">
+          <a class="navbar-brand" href="index.html" id="navbar">
+            <img src="../images/loiIcon.png" alt="Icone" width="100%" height="60px">
+          </a>
+        </div>
+      </nav>
+    <!--Fim da NavBar-->
+    <!--Inicio da Main-->
+    <div class="container">
+        <div class="container" id="forms">
+            <h6 class="display-6" id="topo">
+                Contato
+            </h6>
+            <form class="needs-validation" novalidate>
+                <div class="row">
+                    <div class="col-md-6 col-sm-12 mb-3">
+                        <label class="form-label">Nome:</label><br>
+                        <input type="text" class="form-control" required>
+                        <div class="invalid-feedback">
+                            Campo obrigatório.
+                        </div>				
+                    </div>
+
+                    <div class="col-md-4 col-sm-12 mb-3">
+                        <label class="form-label">E-Mail:</label><br>
+                        <input type="email" class="form-control" required>
+                        <div class="invalid-feedback">
+                            Campo obrigatório.
+                        </div>	
+                    </div>			
+                    <div class="col-md-2 col-sm-12 mb-3">
+                        <label class="form-label">Telefone:</label><br>
+                        <input type="tel" class="form-control">
+                    </div>					
+                </div>     
+        
+                <div class="row">
+                    <div class="col-12 mb-3">
+                        <label class="form-label">Mensagem:</label>
+                        <textarea class="form-control" required></textarea>
+                        <div class="invalid-feedback">
+                            Campo obrigatório.
+                        </div>				
+                    </div>			
+                </div>
+        
+                <div class="row" id="baixo">
+                    <div class="col-12">
+                        <button type="submit" class="btn btn-primary">
+                            <i class="bi bi-send"></i> Enviar
+                        </button>
+        
+                        <button type="reset" class="btn btn-danger">
+                            <i class="bi bi-x-circle"></i> Limpar
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!--Fim da Main-->
+</body>
+<footer>
+    <div class="container">
+        <div id="logo">
+            <img src="../images/loiIcon.png" alt="loi" height="100px">
+        </div>
+        <div class="row">
+            <div id="contato">
+                <ul>
+                    <li><a href="#" style="color: white; font-size: 25px;">Contato</a></li>
+                    <li><i class="bi bi-envelope-fill"></i>enrique.msavedra@gmail.com</li>
+                    <li>jgamec2019@gmail.com</li>
+                    <li><i class="bi bi-instagram"></i><br><a href="https://www.instagram.com/rique._.21/" style="color: white;"> Enrique Machado</a></li>
+                    <li></i><a href="https://www.instagram.com/b1nair3/" style="color: white;"> João Vitor Carrilho</a></li>
+                </ul>
+            </div>
+        </div>
+        <p>© 2023-2024 João Vitor Carrilho, Enrique Machado Savedra</p>
+    </div>
+</footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+        <script type="text/javascript">
+        // Example starter JavaScript for disabling form submissions if there are invalid fields
+        (() => {
+          'use strict'
+    
+          // Fetch all the forms we want to apply custom Bootstrap validation styles to
+          const forms = document.querySelectorAll('.needs-validation')
+    
+          // Loop over them and prevent submission
+          Array.from(forms).forEach(form => {
+            form.addEventListener('submit', event => {
+              if (!form.checkValidity()) {
+                event.preventDefault()
+                event.stopPropagation()
+              }
+    
+              form.classList.add('was-validated')
+            }, false)
+          })
+        })()		
+        </script>
+</html>
